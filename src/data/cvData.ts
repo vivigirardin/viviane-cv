@@ -1,4 +1,3 @@
-
 export const cvData = {
   profile: {
     name: "Viviane Girardin",
@@ -155,7 +154,19 @@ export const cvData = {
     }
   ],
   
-  skills: "LIMS LabWare - <strong>advanced</strong><br>R - <strong>advanced</strong><br>Python - basic<br>HTML - basic<br>CSS - basic<br>Crystal Reports - intermediate<br>Photoshop - intermediate<br>Excel - intermediate",
+  skills: [
+    { name: "R", level: 8 },
+    { name: "Shiny", level: 8 },
+    { name: "LIMS LabWare", level: 8 },
+    { name: "SQL", level: 8, description: "Mostly Oracle and SQLite, some PostgreSQL experience" },
+    { name: "Docker", level: 6 },
+    { name: "Kubernetes", level: 5 },
+    { name: "Google Cloud Platform", level: 4 },
+    { name: "Python", level: 4 },
+    { name: "HTML", level: 3 },
+    { name: "CSS", level: 3 },
+    { name: "Crystal Reports", level: 5 }
+  ],
   
   languages: "<strong>Portuguese</strong> - Native<br><strong>Norwegian</strong> - Professional<br><strong>English</strong> - Professional",
   
