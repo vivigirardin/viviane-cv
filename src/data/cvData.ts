@@ -169,8 +169,8 @@ export const cvData = {
     { name: "Python", level: 4 },
     { name: "HTML", level: 3 },
     { name: "CSS", level: 3 },
-    { name: "Crystal Reports", level: 5 }
-    { name: "LabWare LIMS", level: 8 },
+    { name: "Crystal Reports", level: 5 },
+    { name: "LIMS LabWare", level: 8 }
   ],
   
   languages: "<strong>Portuguese</strong> - Native<br><strong>Norwegian</strong> - Professional<br><strong>English</strong> - Professional",
