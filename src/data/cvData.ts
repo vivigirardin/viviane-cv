@@ -10,7 +10,7 @@ export const cvData = {
     }
   },
   
-  summary: "As a self-taught developer, I have had the opportunity to contribute to building NIVA’s digital lab infrastructure, including developing and maintaining a custom Laboratory Information Management System (LIMS). I work on creating R Shiny applications to support data visualisation and help improve data handling processes. I assist with designing data pipelines and ensuring the documentation of data and processing methods align with the FAIR principles. Additionally, my background in customer service has strengthened my ability to communicate effectively with stakeholders, understand their needs, and translate them into technical solutions. I collaborate closely with team members to improve data quality and make it more accessible for decision-making.",
+  summary: "As a self-taught developer, I have had the opportunity to contribute to building some NIVA’s lab digital solutions. I work on creating R Shiny applications to support data visualisation and help improve data handling processes. I assist with designing data pipelines and ensuring the documentation of data and processing methods align with the FAIR principles. Additionally, my background in customer service has strengthened my ability to communicate with users, understand their needs, and translate them into technical solutions. I collaborate closely with team members to improve data quality and make it more accessible for decision-making.",
   
   education: [
     {
