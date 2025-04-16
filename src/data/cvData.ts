@@ -1,3 +1,4 @@
+
 export const cvData = {
   profile: {
     name: "Viviane Girardin",
@@ -9,14 +10,8 @@ export const cvData = {
     }
   },
 
-  Summary: [
-
-    {"She is responsible for infrastructure, development and integration 
-    of NIVA's LIMS system (Laboratory Information Management System). 
-    In addition, she works with the development of applications (R Shiny)
-    and assists with the design of data handling plans, documentation of data 
-    and data processing in accordance with the FAIR principles"}
-  ]
+  summary: "She is responsible for infrastructure, development and integration of NIVA's LIMS system (Laboratory Information Management System). In addition, she works with the development of applications (R Shiny) and assists with the design of data handling plans, documentation of data and data processing in accordance with the FAIR principles",
+  
   education: [
     {
       position: "MSc in Toxicology",
@@ -38,7 +33,7 @@ export const cvData = {
       company: "Norwegian Institute for Water Research (NIVA)",
       dates: "August 2019 - Present",
       details: `<ul class="list-disc pl-5 space-y-1">
-        <li>Development of Shiny dashboards for data access, visualization, and quality assurance/li>
+        <li>Development of Shiny dashboards for data access, visualization, and quality assurance</li>
         <li>Development and maintenance of the laboratory data system, including its database</li>
         <li>Data management and governance in national and international projects</li>
       </ul>`
@@ -177,8 +172,8 @@ export const cvData = {
     { name: "Markdown", level: 7 },
     { name: "HTML", level: 5 },
     { name: "CSS", level: 5 },
-    { name: "Crystal Reports", level: 5 }
-    { name: "LIMS LabWare", level: 8 },
+    { name: "Crystal Reports", level: 5 },
+    { name: "LIMS LabWare", level: 8 }
   ],
   
   languages: "<strong>Portuguese</strong> - Native<br><strong>Norwegian</strong> - Professional<br><strong>English</strong> - Professional",

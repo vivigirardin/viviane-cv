@@ -1,5 +1,5 @@
 
-import { Briefcase, GraduationCap, Archive, Star, Globe, Heart, Printer } from "lucide-react";
+import { Briefcase, GraduationCap, Archive, Star, Globe, Heart, Printer, User } from "lucide-react";
 import { Header } from "./Header";
 import { Section } from "./Section";
 import { ExperienceItem } from "./ExperienceItem";
@@ -39,6 +39,14 @@ export function ResumeBuilder() {
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
         <div className="md:col-span-2">
+          {cvData.summary && (
+            <Section title="Summary" icon={<User size={20} />}>
+              <div className="text-sm leading-relaxed mb-4 text-gray-700 p-3 bg-gray-50 rounded-md">
+                {cvData.summary}
+              </div>
+            </Section>
+          )}
+
           <Section title="Work Experience" icon={<Briefcase size={20} />}>
             {cvData.experiences.map((item, index) => (
               <ExperienceItem 
