@@ -1,3 +1,4 @@
+
 export const cvData = {
   profile: {
     name: "Viviane Girardin",
@@ -8,6 +9,8 @@ export const cvData = {
       github: "github.com/vivigirardin"
     }
   },
+  
+  summary: "She is responsible for infrastructure, development and integration of NIVA's LIMS system (Laboratory Information Management System). In addition, she works with the development of applications (R Shiny) and assists with the design of data handling plans, documentation of data and data processing in accordance with the FAIR principles.",
   
   education: [
     {
