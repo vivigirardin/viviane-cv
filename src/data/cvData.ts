@@ -1,7 +1,6 @@
 export const cvData = {
   profile: {
     name: "Viviane Girardin",
-    tagline: "M.Sc. Toxicology",
     contacts: {
       email: "girardin.vivi@gmail.com",
       phone: "+4797944071",
