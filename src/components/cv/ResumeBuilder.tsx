@@ -33,7 +33,7 @@ export function ResumeBuilder() {
       
       <Header 
         name={cvData.profile.name} 
-        tagline={cvData.profile.tagline} 
+        tagline="" 
         contacts={cvData.profile.contacts} 
       />
       
