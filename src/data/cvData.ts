@@ -1,0 +1,163 @@
+
+export const cvData = {
+  profile: {
+    name: "Viviane Girardin",
+    tagline: "M.Sc. Toxicology",
+    contacts: {
+      email: "girardin.vivi@gmail.com",
+      phone: "+4797944071",
+      linkedin: "linkedin.com/in/viviane-girardin",
+      github: "github.com/vivigirardin"
+    }
+  },
+  
+  education: [
+    {
+      position: "MSc in Toxicology",
+      company: "University of Oslo",
+      dates: "January 2017 - December 2018",
+      details: ""
+    },
+    {
+      position: "BSc in Biology",
+      company: "University of Oslo",
+      dates: "August 2014 - December 2016",
+      details: ""
+    }
+  ],
+  
+  experiences: [
+    {
+      position: "Systems Engineer",
+      company: "Norwegian Institute for Water Research (NIVA)",
+      dates: "August 2019 - Present",
+      details: `<ul class="list-disc pl-5 space-y-1">
+        <li>Development of Shiny dashboards that allow users to access, visualize, and quality control data</li>
+        <li>Development and maintenance of the laboratory data system, including its database</li>
+        <li>Development and implementation of web-solutions for work-processes in the laboratory</li>
+        <li>Data management, data governance and quality in national and international projects</li>
+      </ul>`
+    },
+    {
+      position: "Research Assistant, Laboratory Engineer",
+      company: "Norwegian Institute for Water Research (NIVA)",
+      dates: "January 2019 - August 2019",
+      details: `<ul class="list-disc pl-5 space-y-1">
+        <li>Elaboration of scientific article (in progress), laboratory work</li>
+      </ul>`
+    },
+    {
+      position: "Teaching assistant",
+      company: "Carpentry@UiO",
+      dates: "2019 - Present",
+      details: `<ul class="list-disc pl-5 space-y-1">
+        <li>Teaching assistant in a variety of workshops in R and Git. Carpentry@UiO offers foundational coding and data science skills workshops to PhD students, researchers and others at UiO</li>
+      </ul>`
+    },
+    {
+      position: "Summer intern",
+      company: "Statens vegvesen",
+      dates: "May 2018 - August 2018",
+      details: `<ul class="list-disc pl-5 space-y-1">
+        <li>Field work - sampling of water, sediment and biota</li>
+        <li>Elaboration of a report on the effects of suspended particles in aquatic systems</li>
+        <li>Summary for the report "Sustainable Design and Maintenance of Stormwater Treatment Facilities"</li>
+        <li>Diverse literature research</li>
+      </ul>`
+    },
+    {
+      position: "Research Assistant",
+      company: "Norwegian Institute for Water Research (NIVA)",
+      dates: "January 2016 - August 2016",
+      details: `<ul class="list-disc pl-5 space-y-1">
+        <li>Laboratory work: Extraction methods for chemical analysis of organic and inorganic compounds in fish, phytoplankton and sediment and quantification using HPLC</li>
+      </ul>`
+    },
+    {
+      position: "Administrative Officer (Temporary contract)",
+      company: "Brazilian – Norwegian Chamber of Commerce",
+      dates: "June 2014 - January 2015",
+      details: `<ul class="list-disc pl-5 space-y-1">
+        <li>Administrative support</li>
+        <li>Organization, management and representation of BNCC on monthly seminars and network events</li>
+        <li>Redesign and restructure of BNCC's website</li>
+        <li>Organization of meetings and travel</li>
+        <li>Member enquiries</li>
+      </ul>`
+    },
+    {
+      position: "English/Portuguese translator and teacher",
+      company: "Self-employed",
+      dates: "August 2008 - January 2014",
+      details: `<ul class="list-disc pl-5 space-y-1">
+        <li>Technical translation of documents and resumes for the oil and gas industry</li>
+        <li>Portuguese and English teacher</li>
+      </ul>`
+    },
+    {
+      position: "Head Cashier / Section Manager",
+      company: "INDITEX Group",
+      dates: "March 2010 - December 2012",
+      details: `<ul class="list-disc pl-5 space-y-1">
+        <li>Responsible for recruiting, training, and leading employees</li>
+        <li>Sales</li>
+        <li>Technical support</li>
+      </ul>`
+    },
+    {
+      position: "Retail/Operational Manager",
+      company: "Hard Rock Café",
+      dates: "July 2008 - February 2010",
+      details: `<ul class="list-disc pl-5 space-y-1">
+        <li>Responsible for recruiting, training, and leading sales assistants</li>
+        <li>Management of all departments as manager in duty</li>
+        <li>Customer service</li>
+      </ul>`
+    }
+  ],
+  
+  courses: [
+    {
+      position: "Certificate - Architecting with Google Kubernetes Engine Specialization Certificate",
+      company: "Statens vegvesen",
+      dates: "1-day course, 2018",
+      details: ""
+    },
+    {
+      position: "Course - Norges Kurs i arbeidsvarsling i henhold til Statens vegvesen Håndbok N301",
+      company: "Statens vegvesen",
+      dates: "1-day course, 2018",
+      details: "Course aimed on safety during roadwork. It gives the necessary knowledge and understanding of their own and others' safety when working on or by road, and the formal safety procedures that must be followed before and during the work."
+    },
+    {
+      position: "Course - International General Certification in Occupational Health and Safety",
+      company: "National Examination Board in Occupational HSE (NEBOSH)",
+      dates: "Approx. 135h, 2012",
+      details: "The course includes the practical assessment of a workplace. <strong>Passed with distinction</strong>."
+    },
+    {
+      position: "Course - Experimental animal studies",
+      company: "University of Oslo",
+      dates: "April 2018",
+      details: "The course includes 25 hours of practical work at an animal facility."
+    },
+    {
+      position: "Other - Swimming instructor",
+      company: "Norges Livredningsselskap",
+      dates: "May 2018 - Present",
+      details: "Swimming courses for children between 4 and 12 years-old."
+    },
+    {
+      position: "Other - Board member",
+      company: "Carpentry@UiO, Sameiet Kirkeveien 129b",
+      dates: "",
+      details: ""
+    }
+  ],
+  
+  skills: "LIMS LabWare - <strong>advanced</strong><br>R - <strong>advanced</strong><br>Python - basic<br>HTML - basic<br>CSS - basic<br>Crystal Reports - intermediate<br>Photoshop - intermediate<br>Excel - intermediate",
+  
+  languages: "<strong>Portuguese</strong> - Native<br><strong>Norwegian</strong> - Professional<br><strong>English</strong> - Professional",
+  
+  interests: "<strong>R</strong>, <strong>SCUBA diving</strong>, <strong>board games</strong>, <strong>travel</strong>"
+};
