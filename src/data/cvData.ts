@@ -1,4 +1,3 @@
-
 export const cvData = {
   profile: {
     name: "Viviane Girardin",
@@ -9,8 +8,6 @@ export const cvData = {
       github: "github.com/vivigirardin"
     }
   },
-
-  summary: "She is responsible for infrastructure, development and integration of NIVA's LIMS system (Laboratory Information Management System). In addition, she works with the development of applications (R Shiny) and assists with the design of data handling plans, documentation of data and data processing in accordance with the FAIR principles",
   
   education: [
     {
@@ -33,7 +30,7 @@ export const cvData = {
       company: "Norwegian Institute for Water Research (NIVA)",
       dates: "August 2019 - Present",
       details: `<ul class="list-disc pl-5 space-y-1">
-        <li>Development of Shiny dashboards for data access, visualization, and quality assurance</li>
+        <li>Development of Shiny dashboards for data access, visualization, and quality assurance/li>
         <li>Development and maintenance of the laboratory data system, including its database</li>
         <li>Data management and governance in national and international projects</li>
       </ul>`
@@ -164,16 +161,16 @@ export const cvData = {
   skills: [
     { name: "R", level: 8 },
     { name: "Shiny", level: 8 },
+    { name: "Git", level: 8 },
     { name: "SQL", level: 8, description: "Mostly Oracle and SQLite, some PostgreSQL experience" },
     { name: "Docker", level: 6 },
     { name: "Kubernetes", level: 5 },
     { name: "Google Cloud Platform", level: 4 },
-    { name: "Python", level: 3 },
-    { name: "Markdown", level: 7 },
-    { name: "HTML", level: 5 },
-    { name: "CSS", level: 5 },
-    { name: "Crystal Reports", level: 5 },
-    { name: "LIMS LabWare", level: 8 }
+    { name: "Python", level: 4 },
+    { name: "HTML", level: 3 },
+    { name: "CSS", level: 3 },
+    { name: "Crystal Reports", level: 5 }
+    { name: "LabWare LIMS", level: 8 },
   ],
   
   languages: "<strong>Portuguese</strong> - Native<br><strong>Norwegian</strong> - Professional<br><strong>English</strong> - Professional",
