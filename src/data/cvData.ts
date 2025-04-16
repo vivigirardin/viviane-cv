@@ -116,8 +116,14 @@ export const cvData = {
   courses: [
     {
       position: "Certificate - Architecting with Google Kubernetes Engine Specialization Certificate",
-      company: "Statens vegvesen",
-      dates: "1-day course, 2018",
+      company: "Google",
+      dates: "1 months at 10 hours a week; July 2024",
+      details: ""
+    },
+    {
+      position: "Certificate - Google Cloud Digital Leader Training",
+      company: "Google",
+      dates: "1 months at 10 hours a week; September 2023",
       details: ""
     },
     {
