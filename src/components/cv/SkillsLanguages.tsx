@@ -18,8 +18,31 @@ export function SkillsLanguages({
   skills = [], 
   useProgressBars = false 
 }: SkillsLanguagesProps) {
+  // If using the new skills array format with progress bars
+  if (useProgressBars && skills.length > 0) {
+    return (
+      <div className="mb-4">
+        {title && <h3 className="text-lg font-medium mb-2">{title}</h3>}
+        <div className="space-y-3">
+          {skills.map((skill, index) => (
+            <div key={index} className="p-1.5 rounded bg-gray-50 hover:bg-primary/10 transition-colors">
+              <div className="flex justify-between mb-1">
+                <span className="text-sm font-medium">{skill.name}</span>
+                <span className="text-xs text-gray-500">{skill.level}/10</span>
+              </div>
+              <Progress value={skill.level * 10} className="h-2" />
+              {skill.description && (
+                <div className="mt-1 text-xs text-gray-600">{skill.description}</div>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    );
+  }
+
   // If using the old content string format
-  if (content && !useProgressBars) {
+  if (typeof content === 'string') {
     return (
       <div className="mb-4">
         {title && <h3 className="text-lg font-medium mb-2">{title}</h3>}
@@ -36,24 +59,11 @@ export function SkillsLanguages({
     );
   }
 
-  // If using the new skills array format with progress bars
+  // Fallback if neither condition is met
   return (
     <div className="mb-4">
       {title && <h3 className="text-lg font-medium mb-2">{title}</h3>}
-      <div className="space-y-3">
-        {skills.map((skill, index) => (
-          <div key={index} className="p-1.5 rounded bg-gray-50 hover:bg-primary/10 transition-colors">
-            <div className="flex justify-between mb-1">
-              <span className="text-sm font-medium">{skill.name}</span>
-              <span className="text-xs text-gray-500">{skill.level}/10</span>
-            </div>
-            <Progress value={skill.level * 10} className="h-2" />
-            {skill.description && (
-              <div className="mt-1 text-xs text-gray-600">{skill.description}</div>
-            )}
-          </div>
-        ))}
-      </div>
+      <div className="text-sm">No content available</div>
     </div>
   );
 }

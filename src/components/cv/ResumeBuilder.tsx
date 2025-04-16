@@ -78,7 +78,11 @@ export function ResumeBuilder() {
         
         <div className="md:col-span-1">
           <Section title="Skills" icon={<Star size={20} />}>
-            <SkillsLanguages title="" content={cvData.skills} />
+            <SkillsLanguages 
+              title="" 
+              skills={cvData.skills} 
+              useProgressBars={true} 
+            />
           </Section>
           
           <Section title="Languages" icon={<Globe size={20} />}>
