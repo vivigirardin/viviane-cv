@@ -30,10 +30,9 @@ export const cvData = {
       company: "Norwegian Institute for Water Research (NIVA)",
       dates: "August 2019 - Present",
       details: `<ul class="list-disc pl-5 space-y-1">
-        <li>Development of Shiny dashboards that allow users to access, visualize, and quality control data</li>
+        <li>Development of Shiny dashboards for data access, visualization, and quality assurance/li>
         <li>Development and maintenance of the laboratory data system, including its database</li>
-        <li>Development and implementation of web-solutions for work-processes in the laboratory</li>
-        <li>Data management, data governance and quality in national and international projects</li>
+        <li>Data management and governance in national and international projects</li>
       </ul>`
     },
     {
