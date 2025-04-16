@@ -10,7 +10,7 @@ export const cvData = {
     }
   },
   
-  summary: "She is responsible for infrastructure, development and integration of NIVA's LIMS system (Laboratory Information Management System). In addition, she works with the development of applications (R Shiny) and assists with the design of data handling plans, documentation of data and data processing in accordance with the FAIR principles.",
+  summary: "As a self-taught developer, I have had the opportunity to contribute to building NIVA’s digital lab infrastructure, including developing and maintaining a custom Laboratory Information Management System (LIMS). I work on creating R Shiny applications to support data visualisation and help improve data handling processes. I assist with designing data pipelines and ensuring the documentation of data and processing methods align with the FAIR principles. Additionally, my background in customer service has strengthened my ability to communicate effectively with stakeholders, understand their needs, and translate them into technical solutions. I collaborate closely with team members to improve data quality and make it more accessible for decision-making.",
   
   education: [
     {
