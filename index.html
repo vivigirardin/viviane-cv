@@ -15,7 +15,7 @@
     <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     
-    <link rel="stylesheet" href="./dist/assets/index-hash.css" />
+    <link rel="stylesheet" href="./assets/index.css" />
     
     <style>
       body {
@@ -40,7 +40,7 @@
       h1 { color: #1a65ac; }
     </style>
     
-    <script type="module" crossorigin src="./dist/assets/index-hash.js"></script>
+    <script type="module" crossorigin src="./assets/index.js"></script>
   </head>
 
   <body>
@@ -52,37 +52,5 @@
         <p>Please enable JavaScript to view this resume.</p>
       </div>
     </noscript>
-    
-    <script>
-      // This script will handle the correct file paths for GitHub Pages
-      document.addEventListener('DOMContentLoaded', function() {
-        // GitHub Pages serves your content from username.github.io/repo-name/
-        // We need to adjust the paths for the JS and CSS files
-        const cssLink = document.querySelector('link[rel="stylesheet"]');
-        const jsScript = document.querySelector('script[crossorigin]');
-        
-        if (cssLink && cssLink.href.includes('index-hash.css')) {
-          // Replace the placeholder with the actual hash after build
-          const cssFiles = document.querySelectorAll('link[rel="stylesheet"]');
-          cssFiles.forEach(link => {
-            if (link.href.includes('index-hash.css')) {
-              const newHref = link.href.replace('./dist/', './');
-              link.href = newHref;
-            }
-          });
-        }
-        
-        if (jsScript && jsScript.src.includes('index-hash.js')) {
-          // Replace the placeholder with the actual hash after build
-          const jsFiles = document.querySelectorAll('script[crossorigin]');
-          jsFiles.forEach(script => {
-            if (script.src.includes('index-hash.js')) {
-              const newSrc = script.src.replace('./dist/', './');
-              script.src = newSrc;
-            }
-          });
-        }
-      });
-    </script>
   </body>
 </html>
