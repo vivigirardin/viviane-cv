@@ -1,5 +1,5 @@
 
-import { Briefcase, GraduationCap, Archive, Star, Globe, Heart, Printer, User, MoreHorizontal, Mail, Phone, Linkedin, Github } from "lucide-react";
+import { Briefcase, GraduationCap, Archive, Star, Globe, Heart, Printer, User, MoreHorizontal } from "lucide-react";
 import { Header } from "./Header";
 import { Section } from "./Section";
 import { ExperienceItem } from "./ExperienceItem";
@@ -10,6 +10,7 @@ import { useEffect } from "react";
 
 export function ResumeBuilder() {
   useEffect(() => {
+    // Update the document title
     document.title = `${cvData.profile.name} - Resume`;
   }, []);
 
@@ -29,30 +30,14 @@ export function ResumeBuilder() {
           Print CV
         </Button>
       </div>
-
-      <div className="print:block border-b pb-4 mb-6">
-        <h1 className="text-3xl font-bold mb-4 text-primary">{cvData.profile.name}</h1>
-        <div className="flex flex-wrap gap-4 text-sm mb-2">
-          <a href={`mailto:${cvData.profile.contacts.email}`} className="flex items-center gap-1.5 text-gray-600 hover:text-primary">
-            <Mail size={16} className="text-primary" />
-            {cvData.profile.contacts.email}
-          </a>
-          <a href={`tel:${cvData.profile.contacts.phone}`} className="flex items-center gap-1.5 text-gray-600 hover:text-primary">
-            <Phone size={16} className="text-primary" />
-            {cvData.profile.contacts.phone}
-          </a>
-          <a href={`https://${cvData.profile.contacts.linkedin}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-gray-600 hover:text-primary">
-            <Linkedin size={16} className="text-primary" />
-            {cvData.profile.contacts.linkedin}
-          </a>
-          <a href={`https://${cvData.profile.contacts.github}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-gray-600 hover:text-primary">
-            <Github size={16} className="text-primary" />
-            {cvData.profile.contacts.github}
-          </a>
-        </div>
-      </div>
       
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4 print:mt-0">
+      <Header 
+        name={cvData.profile.name} 
+        tagline="" 
+        contacts={cvData.profile.contacts} 
+      />
+      
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
         <div className="md:col-span-2">
           {cvData.summary && (
             <Section title="Summary" icon={<User size={20} />}>
