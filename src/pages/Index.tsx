@@ -9,10 +9,14 @@ const Index = () => {
           @media print {
             @page {
               margin: 0.5cm;
+              size: auto;
             }
             body {
               -webkit-print-color-adjust: exact;
               print-color-adjust: exact;
+            }
+            .section-break {
+              break-before: page;
             }
           }
         `
