@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Download, Printer, Code, Globe, Briefcase, ExternalLink, Mail, Phone, Linkedin, Github, User, GraduationCap, Award, MoreHorizontal } from "lucide-react";
@@ -226,14 +225,24 @@ export function MarkdownCV() {
         <div className="print:col-span-1 space-y-4 mt-6 md:mt-0 cv-sidebar">
           <Card className="p-4 print:border print:rounded-lg print:bg-white">
             <div className="flex items-center gap-2 mb-3">
-              <Briefcase size={18} className="text-primary" />
-              <h3 className="text-lg font-medium">Technical Skills</h3>
+              <Code size={18} className="text-primary" />
+              <h3 className="text-lg font-medium">Technical Experience</h3>
             </div>
-            <SkillsLanguages
-              title=""
-              skills={cvData.skills}
-              useProgressBars={true}
-            />
+            {Object.entries(cvData.technicalExperience).map(([category, items]) => (
+              <div key={category} className="mb-4">
+                <h4 className="font-medium text-gray-800 mb-2 capitalize">
+                  {category.replace(/([A-Z])/g, ' $1').trim()}
+                </h4>
+                <div className="space-y-2">
+                  {items.map((item, index) => (
+                    <div key={index} className="text-sm">
+                      <span className="font-medium">{item.name}</span>
+                      <p className="text-gray-600">{item.details}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
           </Card>
           
           <Card className="p-4 print:border print:rounded-lg print:bg-white">
