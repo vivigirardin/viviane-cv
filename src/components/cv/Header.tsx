@@ -24,15 +24,10 @@ export function Header({ name, tagline, contacts }: HeaderProps) {
           <span>{contacts.email}</span>
         </a>
         
-        <a href={`tel:${contacts.phone}`} className="flex items-center gap-1.5 hover:text-primary transition-colors">
-          <Phone className="text-primary" size={18} />
-          <span>{contacts.phone}</span>
-        </a>
-        
-        <div className="flex items-center gap-4">
-          <a href={`https://${contacts.linkedin}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-primary transition-colors">
-            <Linkedin className="text-primary" size={18} />
-            <span>{contacts.linkedin}</span>
+        <div className="flex flex-col items-start gap-2">
+          <a href={`tel:${contacts.phone}`} className="flex items-center gap-1.5 hover:text-primary transition-colors">
+            <Phone className="text-primary" size={18} />
+            <span>{contacts.phone}</span>
           </a>
           
           <a href={`https://${contacts.github}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-primary transition-colors">
@@ -40,7 +35,13 @@ export function Header({ name, tagline, contacts }: HeaderProps) {
             <span>{contacts.github}</span>
           </a>
         </div>
+        
+        <a href={`https://${contacts.linkedin}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-primary transition-colors">
+          <Linkedin className="text-primary" size={18} />
+          <span>{contacts.linkedin}</span>
+        </a>
       </div>
     </div>
   );
 }
+
