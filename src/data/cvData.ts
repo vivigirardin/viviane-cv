@@ -15,37 +15,37 @@ export const cvData = {
     cloudAndInfrastructure: [
       {
         name: "Docker",
-        details: "Experience with containerization, creating and managing Docker images and containers for development and deployment"
+        details: "Some experience with containerization, creating and managing Docker images and containers for development and deployment"
       },
       {
         name: "Kubernetes",
-        details: "Knowledge of container orchestration, deployment management, and cluster configuration"
+        details: "Some experience with container orchestration and deployment management"
       },
       {
         name: "Google Cloud Platform",
-        details: "Experience with GCP services, cloud infrastructure, and deployment workflows"
+        details: "Some experience with GCP services, cloud infrastructure, and deployment workflows"
       }
     ],
     programmingLanguages: [
       {
         name: "R",
-        details: "Primary programming language, extensive experience in data analysis, visualization, and Shiny application development"
+        details: "Primary programming language, experience in data analysis, visualization, and Shiny application development"
       },
       {
         name: "Python",
-        details: "Basic scripting and data analysis"
+        details: "Basic scripting"
       }
     ],
     webTechnologies: [
       {
-        name: "HTML/CSS",
-        details: "Frontend development skills, responsive design implementation"
+        name: "HTML/CSS/Markdown",
+        details: "Experience with frontend development"
       }
     ],
     databases: [
       {
         name: "SQL",
-        details: "Proficient in Oracle and SQLite, with PostgreSQL experience"
+        details: "Oracle and SQLite. Some PostgreSQL experience"
       }
     ],
     tools: [
