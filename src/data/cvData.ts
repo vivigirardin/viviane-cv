@@ -174,13 +174,13 @@ export const cvData = {
       position: "Certificate - Architecting with Google Kubernetes Engine Specialization",
       company: "Google",
       dates: "1-month course, 10 hours/week; July 2024",
-      details: ""
+      details: "<a href='https://www.coursera.org/account/accomplishments/specialization/O4R9C9SJW4ZU' target='_blank' rel='noopener noreferrer' class='text-blue-600 hover:underline'>Certificate link</a>"
     },
     {
       position: "Certificate - Google Cloud Digital Leader Training",
       company: "Google",
       dates: "1-month course, 10 hours/week; September 2023",
-      details: ""
+      details: "<a href='https://www.coursera.org/account/accomplishments/professional-cert/4KAX35ERVWS8' target='_blank' rel='noopener noreferrer' class='text-blue-600 hover:underline'>Certificate link</a>"
     },
     {
       position: "Course - Norges Kurs i arbeidsvarsling i henhold til Statens vegvesen Håndbok N301",
