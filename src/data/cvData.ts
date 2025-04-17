@@ -152,7 +152,7 @@ export const cvData = {
       position: "Board member",
       company: "Carpentry@UiO",
       dates: "",
-      details: "<a href='https://www.ub.uio.no/english/libraries/dsc/carpentry-uio/' target='_blank' rel='noopener noreferrer'>Carpentry@UiO</a>"
+      details: "<a href='https://www.ub.uio.no/english/libraries/dsc/carpentry-uio/' target='_blank' rel='noopener noreferrer' class='text-blue-600 hover:underline'>Visit Carpentry@UiO Website</a>"
     }
   ],
   
