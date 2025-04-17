@@ -1,4 +1,3 @@
-
 export const cvData = {
   profile: {
     name: "Viviane Girardin",
@@ -11,6 +10,55 @@ export const cvData = {
   },
 
   summary: "As a self-taught developer, I've contributed to developing digital solutions for NIVA's laboratories. I build R Shiny applications to support data visualisation and improve data handling processes. I assist in designing data pipelines and ensuring that data and processing methods are documented in line with the FAIR principles. My background in customer service has enhanced my communication skills, enabling me to better understand user needs and translate them into effective technical solutions. I collaborate closely with team members to improve data quality and make it more accessible for decision-making.",
+
+  technicalExperience: {
+    cloudAndInfrastructure: [
+      {
+        name: "Docker",
+        details: "Experience with containerization, creating and managing Docker images and containers for development and deployment"
+      },
+      {
+        name: "Kubernetes",
+        details: "Knowledge of container orchestration, deployment management, and cluster configuration"
+      },
+      {
+        name: "Google Cloud Platform",
+        details: "Experience with GCP services, cloud infrastructure, and deployment workflows"
+      }
+    ],
+    programmingLanguages: [
+      {
+        name: "R",
+        details: "Primary programming language, extensive experience in data analysis, visualization, and Shiny application development"
+      },
+      {
+        name: "Python",
+        details: "Basic scripting and data analysis"
+      }
+    ],
+    webTechnologies: [
+      {
+        name: "HTML/CSS",
+        details: "Frontend development skills, responsive design implementation"
+      }
+    ],
+    databases: [
+      {
+        name: "SQL",
+        details: "Proficient in Oracle and SQLite, with PostgreSQL experience"
+      }
+    ],
+    tools: [
+      {
+        name: "Git",
+        details: "Version control and collaborative development"
+      },
+      {
+        name: "Crystal Reports",
+        details: "Report design and generation"
+      }
+    ]
+  },
 
   education: [
     {
@@ -161,20 +209,6 @@ export const cvData = {
       dates: "",
       details: "Contributes to discussions and initiatives related to workplace safety, wellbeing, and the physical and psychosocial work environment."
     }
-  ],
-
-  skills: [
-    { name: "R", level: 7 },
-    { name: "Shiny", level: 7 },
-    { name: "Git", level: 7 },
-    { name: "SQL", level: 7, description: "Mostly Oracle and SQLite, with some PostgreSQL experience" },
-    { name: "Docker", level: 6 },
-    { name: "Kubernetes", level: 5 },
-    { name: "Google Cloud Platform", level: 4 },
-    { name: "HTML", level: 4 },
-    { name: "CSS", level: 4 },
-    { name: "Python", level: 3 },
-    { name: "Crystal Reports", level: 5 }
   ],
 
   languages: "<strong>Portuguese</strong> – Native<br><strong>Norwegian</strong> – Professional<br><strong>English</strong> – Professional",
