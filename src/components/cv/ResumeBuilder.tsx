@@ -70,7 +70,7 @@ export function ResumeBuilder() {
             ))}
           </Section>
           
-          <Section title="Courses & Other Experiences" icon={<Archive size={20} />}>
+          <Section title="Other Experiences" icon={<Archive size={20} />}>
             {cvData.courses.map((item, index) => (
               <ExperienceItem 
                 key={index}
