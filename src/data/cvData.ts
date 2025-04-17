@@ -1,5 +1,6 @@
+
 export const cvData = {
-  profile: [{
+  profile: {
     name: "Viviane Girardin",
     contacts: {
       email: "girardin.vivi@gmail.com",
@@ -7,9 +8,9 @@ export const cvData = {
       linkedin: "linkedin.com/in/viviane-girardin",
       github: "github.com/vivigirardin"
     }
-  }],
+  },
 
-  summary: ["As a self-taught developer, I’ve contributed to developing digital solutions for NIVA’s laboratories. I build R Shiny applications to support data visualisation and improve data handling processes. I assist in designing data pipelines and ensuring that data and processing methods are documented in line with the FAIR principles. My background in customer service has enhanced my communication skills, enabling me to better understand user needs and translate them into effective technical solutions. I collaborate closely with team members to improve data quality and make it more accessible for decision-making."],
+  summary: "As a self-taught developer, I've contributed to developing digital solutions for NIVA's laboratories. I build R Shiny applications to support data visualisation and improve data handling processes. I assist in designing data pipelines and ensuring that data and processing methods are documented in line with the FAIR principles. My background in customer service has enhanced my communication skills, enabling me to better understand user needs and translate them into effective technical solutions. I collaborate closely with team members to improve data quality and make it more accessible for decision-making.",
 
   education: [
     {

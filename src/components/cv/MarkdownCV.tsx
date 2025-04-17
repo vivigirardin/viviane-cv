@@ -8,7 +8,6 @@ import { SkillsLanguages } from "@/components/cv/SkillsLanguages";
 
 export function MarkdownCV() {
   const [markdown, setMarkdown] = useState<string>('');
-  const [printHeaderOnly, setPrintHeaderOnly] = useState<boolean>(false);
 
   useEffect(() => {
     fetch('/src/data/simplifiedCV.md')
@@ -24,14 +23,6 @@ export function MarkdownCV() {
 
   const handlePrint = () => {
     window.print();
-  };
-  
-  const handlePrintHeaderOnly = () => {
-    setPrintHeaderOnly(true);
-    setTimeout(() => {
-      window.print();
-      setPrintHeaderOnly(false);
-    }, 100);
   };
   
   const handleDownload = () => {
@@ -134,15 +125,7 @@ export function MarkdownCV() {
           className="flex items-center gap-2"
         >
           <Printer size={16} />
-          Print Full CV
-        </Button>
-        <Button 
-          onClick={handlePrintHeaderOnly} 
-          variant="outline" 
-          className="flex items-center gap-2"
-        >
-          <Printer size={16} />
-          Print Header Only
+          Print CV
         </Button>
         <Button 
           onClick={handleDownload} 
@@ -168,10 +151,6 @@ export function MarkdownCV() {
           }
           .print-section { display: block !important; }
           .print-hidden { display: none !important; }
-          .print-show-header-only .cv-body,
-          .print-show-header-only .cv-sidebar { 
-            display: none !important; 
-          }
           
           /* Enhanced print styles to match web appearance */
           .print-preserve-grid {
@@ -227,7 +206,7 @@ export function MarkdownCV() {
         `
       }} />
       
-      <div className={`md:grid md:grid-cols-3 gap-6 p-6 print:p-4 print:preserve-grid ${printHeaderOnly ? 'print-show-header-only' : ''}`}>
+      <div className="md:grid md:grid-cols-3 gap-6 p-6 print:p-4 print:preserve-grid">
         <div className="md:col-span-2 print:col-span-2">
           <div className="print-section">
             <h1 className="text-3xl font-bold mt-1 mb-4">{header.name}</h1>
