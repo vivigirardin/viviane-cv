@@ -1,5 +1,5 @@
 
-import { Briefcase, GraduationCap, Archive, Star, Globe, Heart, Printer, User } from "lucide-react";
+import { Briefcase, GraduationCap, Archive, Star, Globe, Heart, Printer, User, MoreHorizontal } from "lucide-react";
 import { Header } from "./Header";
 import { Section } from "./Section";
 import { ExperienceItem } from "./ExperienceItem";
@@ -72,7 +72,19 @@ export function ResumeBuilder() {
           </Section>
           
           <Section title="Courses & Certificates" icon={<Archive size={20} />}>
-            {cvData.courses.map((item, index) => (
+            {cvData.courses.filter(item => item.position !== "Other - Board member").map((item, index) => (
+              <ExperienceItem 
+                key={index}
+                position={item.position}
+                company={item.company}
+                dates={item.dates}
+                details={item.details}
+              />
+            ))}
+          </Section>
+
+          <Section title="Others" icon={<MoreHorizontal size={20} />}>
+            {cvData.courses.filter(item => item.position === "Other - Board member").map((item, index) => (
               <ExperienceItem 
                 key={index}
                 position={item.position}

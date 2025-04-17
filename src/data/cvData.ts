@@ -147,12 +147,6 @@ export const cvData = {
       details: "The course includes the practical assessment of a workplace. <strong>Passed with distinction</strong>."
     },
     {
-      position: "Others",
-      company: "",
-      dates: "",
-      details: ""
-    },
-    {
       position: "Other - Board member",
       company: "Carpentry@UiO, Sameiet Kirkeveien 129b",
       dates: "",
