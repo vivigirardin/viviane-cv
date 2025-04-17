@@ -29,15 +29,17 @@ export function Header({ name, tagline, contacts }: HeaderProps) {
           <span>{contacts.phone}</span>
         </a>
         
-        <a href={`https://${contacts.linkedin}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-primary transition-colors">
-          <Linkedin className="text-primary" size={18} />
-          <span>{contacts.linkedin}</span>
-        </a>
-        
-        <a href={`https://${contacts.github}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-primary transition-colors">
-          <Github className="text-primary" size={18} />
-          <span>{contacts.github}</span>
-        </a>
+        <div className="flex items-center gap-4">
+          <a href={`https://${contacts.linkedin}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-primary transition-colors">
+            <Linkedin className="text-primary" size={18} />
+            <span>{contacts.linkedin}</span>
+          </a>
+          
+          <a href={`https://${contacts.github}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-primary transition-colors">
+            <Github className="text-primary" size={18} />
+            <span>{contacts.github}</span>
+          </a>
+        </div>
       </div>
     </div>
   );
