@@ -42,6 +42,16 @@ const Index = () => {
             .md\\:text-left {
               text-align: left !important;
             }
+            /* Fix spacing between header and content */
+            .mb-8 {
+              margin-bottom: 1rem !important;
+            }
+            .mt-8 {
+              margin-top: 1rem !important;
+            }
+            .pb-6 {
+              padding-bottom: 1rem !important;
+            }
           }
         `
       }} />

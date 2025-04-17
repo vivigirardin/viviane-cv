@@ -14,9 +14,9 @@ interface HeaderProps {
 
 export function Header({ name, tagline, contacts }: HeaderProps) {
   return (
-    <div className="mb-8 text-center md:text-left border-b pb-6">
+    <div className="mb-8 text-center md:text-left border-b pb-4 print:pb-2 print:mb-4">
       <h1 className="text-5xl font-bold mb-2 text-primary">{name}</h1>
-      <p className="text-xl mb-6 text-muted-foreground italic">{tagline}</p>
+      <p className="text-xl mb-6 print:mb-3 text-muted-foreground italic">{tagline}</p>
       
       <div className="flex flex-wrap justify-center md:justify-start gap-6 text-sm">
         <a href={`mailto:${contacts.email}`} className="flex items-center gap-1.5 hover:text-primary transition-colors">
