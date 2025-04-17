@@ -142,12 +142,13 @@ export function MarkdownCV() {
         @media print {
           @page { 
             margin: 0.5cm;
-            size: auto;
+            size: A4;
           }
           body {
             -webkit-print-color-adjust: exact;
             print-color-adjust: exact;
             color-adjust: exact;
+            background: white !important;
           }
           .print-section { display: block !important; }
           .print-hidden { display: none !important; }
@@ -198,7 +199,7 @@ export function MarkdownCV() {
           
           /* Force background colors to print */
           .bg-gray-50, .bg-primary\/10 {
-            background-color: #f9fafb !important;
+            background-color: white !important;
             -webkit-print-color-adjust: exact !important;
             print-color-adjust: exact !important;
           }
@@ -212,10 +213,10 @@ export function MarkdownCV() {
             <h1 className="text-3xl font-bold mt-1 mb-4">{header.name}</h1>
             <div dangerouslySetInnerHTML={{ 
               __html: renderMarkdown(header.contacts) 
-            }} className="mb-6" />
+            }} className="mb-3" />
           </div>
           
-          <div className="markdown-content cv-body" 
+          <div className="markdown-content cv-body mt-0" 
             dangerouslySetInnerHTML={{ 
               __html: renderMarkdown(markdown.replace(/^# .*$/m, '').replace(/^\*\*Email:\*\*.*\*\*GitHub:\*\*.*$/m, '')) 
             }}
@@ -223,7 +224,7 @@ export function MarkdownCV() {
         </div>
         
         <div className="print:col-span-1 space-y-4 mt-6 md:mt-0 cv-sidebar">
-          <Card className="p-4 print:border print:rounded-lg">
+          <Card className="p-4 print:border print:rounded-lg print:bg-white">
             <div className="flex items-center gap-2 mb-3">
               <Briefcase size={18} className="text-primary" />
               <h3 className="text-lg font-medium">Technical Skills</h3>
@@ -235,7 +236,7 @@ export function MarkdownCV() {
             />
           </Card>
           
-          <Card className="p-4 print:border print:rounded-lg">
+          <Card className="p-4 print:border print:rounded-lg print:bg-white">
             <div className="flex items-center gap-2 mb-3">
               <Globe size={18} className="text-primary" />
               <h3 className="text-lg font-medium">Languages</h3>
@@ -246,7 +247,7 @@ export function MarkdownCV() {
             />
           </Card>
           
-          <Card className="p-4 print:border print:rounded-lg">
+          <Card className="p-4 print:border print:rounded-lg print:bg-white">
             <div className="flex items-center gap-2 mb-3">
               <Code size={18} className="text-primary" />
               <h3 className="text-lg font-medium">Interests</h3>

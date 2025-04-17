@@ -15,12 +15,13 @@ const Index = () => {
           @media print {
             @page {
               margin: 0.5cm;
-              size: auto;
+              size: A4;
             }
             body {
               -webkit-print-color-adjust: exact !important;
               print-color-adjust: exact !important;
               color-adjust: exact !important;
+              background: white !important;
             }
             
             /* Hide elements when printing */
@@ -80,6 +81,7 @@ const Index = () => {
             .card {
               border: 1px solid #e5e7eb !important;
               border-radius: 0.5rem !important;
+              background-color: white !important;
             }
             
             /* Make sure colors print */
@@ -93,7 +95,11 @@ const Index = () => {
             
             /* Make sure backgrounds print */
             .bg-gray-50 {
-              background-color: #f9fafb !important;
+              background-color: white !important;
+            }
+            
+            .gradient-bg {
+              background: white !important;
             }
             
             /* Ensure progress bars print correctly */

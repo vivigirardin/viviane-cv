@@ -19,7 +19,7 @@ export function ResumeBuilder() {
   };
 
   return (
-    <div className="max-w-4xl mx-auto py-8 px-4 sm:px-6 bg-white shadow-lg rounded-lg print:shadow-none print:p-0">
+    <div className="max-w-4xl mx-auto py-8 px-4 sm:px-6 bg-white shadow-lg rounded-lg print:shadow-none print:p-0 print:bg-white">
       <div className="flex justify-end mb-4 print:hidden">
         <Button 
           onClick={handlePrint} 
@@ -41,7 +41,7 @@ export function ResumeBuilder() {
         <div className="md:col-span-2">
           {cvData.summary && (
             <Section title="Summary" icon={<User size={20} />}>
-              <div className="text-sm leading-relaxed mb-4 text-gray-700 p-3 bg-gray-50 rounded-md">
+              <div className="text-sm leading-relaxed mb-4 text-gray-700 p-3 bg-gray-50 print:bg-white rounded-md">
                 {cvData.summary}
               </div>
             </Section>
