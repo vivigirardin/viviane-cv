@@ -154,7 +154,8 @@ export function MarkdownCV() {
         </Button>
       </div>
       
-      <style jsx global>{`
+      <style dangerouslySetInnerHTML={{
+        __html: `
         @media print {
           @page { 
             margin: 0.5cm;
@@ -175,7 +176,8 @@ export function MarkdownCV() {
             grid-template-columns: 2fr 1fr !important;
           }
         }
-      `}</style>
+        `
+      }} />
       
       <div className={`md:grid md:grid-cols-3 gap-6 p-6 print:p-4 print:preserve-grid ${printHeaderOnly ? 'print-show-header-only' : ''}`}>
         <div className="md:col-span-2 print:col-span-2">
