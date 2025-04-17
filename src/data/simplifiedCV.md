@@ -3,10 +3,10 @@
 
 **Email:** [girardin.vivi@gmail.com](mailto:girardin.vivi@gmail.com) | **Phone:** [+4797944071](tel:+4797944071) | **LinkedIn:** [linkedin.com/in/viviane-girardin](https://linkedin.com/in/viviane-girardin) | **GitHub:** [github.com/vivigirardin](https://github.com/vivigirardin)
 
-## Summary
+## <i data-lucide="user"></i> Summary
 Self-taught developer contributing to digital solutions for NIVA's laboratories. Building R Shiny applications to support data visualization and improve data handling processes. Assisting in designing data pipelines and ensuring data follows FAIR principles. Strong communication skills from customer service background help translate user needs into technical solutions.
 
-## Experience
+## <i data-lucide="briefcase"></i> Experience
 
 ### Systems Engineer
 **Norwegian Institute for Water Research (NIVA)** | *Aug 2019 - Present*
@@ -27,7 +27,7 @@ Self-taught developer contributing to digital solutions for NIVA's laboratories.
 - Field work – sampling of water, sediment and biota
 - Elaboration of reports on environmental impacts
 
-## Education
+## <i data-lucide="graduation-cap"></i> Education
 
 ### MSc in Toxicology
 **University of Oslo** | *Jan 2017 - Dec 2018*
@@ -35,11 +35,10 @@ Self-taught developer contributing to digital solutions for NIVA's laboratories.
 ### BSc in Biology
 **University of Oslo** | *Aug 2014 - Dec 2016*
 
-## Certificates & Courses
+## <i data-lucide="award"></i> Certificates & Courses
 - **Architecting with Google Kubernetes Engine** | Google | *July 2024*
 - **Google Cloud Digital Leader** | Google | *September 2023*
 
-## Other Roles
+## <i data-lucide="more-horizontal"></i> Other Roles
 - **Board Member** at [Carpentry@UiO](https://www.ub.uio.no/english/libraries/dsc/carpentry-uio/)
 - **Working Environment Committee Member** at NIVA
-

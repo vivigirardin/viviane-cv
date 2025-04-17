@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from 'react';
 import { Button } from "@/components/ui/button";
-import { Download, Printer, Code, Globe, Briefcase, ExternalLink, Mail, Phone, Linkedin, Github } from "lucide-react";
+import { Download, Printer, Code, Globe, Briefcase, ExternalLink, Mail, Phone, Linkedin, Github, User, GraduationCap, Award, MoreHorizontal } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { cvData } from "@/data/cvData";
 import { SkillsLanguages } from "@/components/cv/SkillsLanguages";
@@ -66,9 +66,16 @@ export function MarkdownCV() {
       '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline flex items-center gap-1.5">$1<ExternalLink size={14} /></a>'
     );
     
+    // Replace icons in section headers
+    renderedText = renderedText.replace(/<i data-lucide="user"><\/i>/g, '<User size={20} className="inline mr-2 text-primary" />');
+    renderedText = renderedText.replace(/<i data-lucide="briefcase"><\/i>/g, '<Briefcase size={20} className="inline mr-2 text-primary" />');
+    renderedText = renderedText.replace(/<i data-lucide="graduation-cap"><\/i>/g, '<GraduationCap size={20} className="inline mr-2 text-primary" />');
+    renderedText = renderedText.replace(/<i data-lucide="award"><\/i>/g, '<Award size={20} className="inline mr-2 text-primary" />');
+    renderedText = renderedText.replace(/<i data-lucide="more-horizontal"><\/i>/g, '<MoreHorizontal size={20} className="inline mr-2 text-primary" />');
+    
     // Format headings
     renderedText = renderedText.replace(/^# (.*$)/gm, '<h1 class="text-3xl font-bold mt-1 mb-4">$1</h1>');
-    renderedText = renderedText.replace(/^## (.*$)/gm, '<h2 class="text-2xl font-semibold mt-6 mb-3 border-b pb-1">$1</h2>');
+    renderedText = renderedText.replace(/^## (.*$)/gm, '<h2 class="text-2xl font-semibold mt-6 mb-3 border-b pb-1 flex items-center">$1</h2>');
     renderedText = renderedText.replace(/^### (.*$)/gm, '<h3 class="text-xl font-semibold mt-4 mb-1 text-primary">$1</h3>');
     
     // Format lists
