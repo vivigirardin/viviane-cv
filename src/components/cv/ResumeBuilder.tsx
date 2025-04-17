@@ -72,7 +72,7 @@ export function ResumeBuilder() {
           </Section>
           
           <Section title="Courses & Certificates" icon={<Archive size={20} />}>
-            {cvData.courses.filter(item => item.position !== "Other - Board member").map((item, index) => (
+            {cvData.courses.map((item, index) => (
               <ExperienceItem 
                 key={index}
                 position={item.position}
@@ -84,7 +84,7 @@ export function ResumeBuilder() {
           </Section>
 
           <Section title="Others" icon={<MoreHorizontal size={20} />}>
-            {cvData.courses.filter(item => item.position === "Other - Board member").map((item, index) => (
+            {cvData.others.map((item, index) => (
               <ExperienceItem 
                 key={index}
                 position={item.position}
