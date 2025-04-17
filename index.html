@@ -4,7 +4,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="refresh" content="0;url=dist/index.html" />
     <title>Viviane Girardin - Resume</title>
     <meta name="description" content="Professional resume of Viviane Girardin" />
     <meta name="author" content="Viviane Girardin" />
@@ -41,25 +40,14 @@
   </head>
 
   <body>
-    <h1>Viviane Girardin - Resume</h1>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
     
-    <div class="loading">Loading resume...</div>
-    
-    <div class="github-notice">
-      <p>If the resume doesn't load automatically, please click here: 
-      <a href="dist/index.html">View Resume</a></p>
-    </div>
-    
-    <script>
-      // Check if we're in the GitHub Pages environment
-      if (window.location.hostname.includes('github.io')) {
-        // Adjust the path for GitHub Pages
-        const redirectPath = window.location.pathname.endsWith('/') 
-          ? window.location.pathname + 'dist/index.html' 
-          : window.location.pathname + '/dist/index.html';
-        
-        window.location.href = redirectPath;
-      }
-    </script>
+    <noscript>
+      <h1>Viviane Girardin - Resume</h1>
+      <div class="github-notice">
+        <p>Please enable JavaScript to view this resume.</p>
+      </div>
+    </noscript>
   </body>
 </html>
