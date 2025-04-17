@@ -1,4 +1,3 @@
-
 import { Briefcase, GraduationCap, Archive, Star, Globe, Heart, Printer, User } from "lucide-react";
 import { Header } from "./Header";
 import { Section } from "./Section";
