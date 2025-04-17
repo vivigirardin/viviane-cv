@@ -1,3 +1,4 @@
+
 export const cvData = {
   profile: {
     name: "Viviane Girardin",
@@ -146,10 +147,10 @@ export const cvData = {
       details: "The course includes the practical assessment of a workplace. <strong>Passed with distinction</strong>."
     },
     {
-      position: "Other - Board member",
-      company: "Carpentry@UiO, Sameiet Kirkeveien 129b",
+      position: "Board member",
+      company: "Carpentry@UiO",
       dates: "",
-      details: `Board member at <a href="https://www.ub.uio.no/english/libraries/dsc/carpentry-uio/" target="_blank" class="text-blue-600 hover:underline">Carpentry@UiO</a>`
+      details: ""
     }
   ],
   
