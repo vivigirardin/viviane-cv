@@ -1,7 +1,13 @@
 
+import { useState } from "react";
 import { ResumeBuilder } from "@/components/cv/ResumeBuilder";
+import { MarkdownCV } from "@/components/cv/MarkdownCV";
+import { Button } from "@/components/ui/button";
+import { FileText, FileCode } from "lucide-react";
 
 const Index = () => {
+  const [viewMode, setViewMode] = useState<'full' | 'simple'>('full');
+
   return (
     <div className="min-h-screen w-full bg-gradient-to-br from-gray-50 to-gray-200 print:p-0 print:bg-white text-left">
       <style dangerouslySetInnerHTML={{
@@ -55,7 +61,35 @@ const Index = () => {
           }
         `
       }} />
-      <ResumeBuilder />
+      
+      <div className="max-w-4xl mx-auto py-8 px-4 sm:px-6">
+        <div className="flex justify-center mb-6 print:hidden">
+          <div className="inline-flex rounded-md shadow-sm" role="group">
+            <Button
+              variant={viewMode === 'full' ? 'default' : 'outline'}
+              className="flex items-center gap-2 rounded-r-none"
+              onClick={() => setViewMode('full')}
+            >
+              <FileText size={16} />
+              Full CV
+            </Button>
+            <Button
+              variant={viewMode === 'simple' ? 'default' : 'outline'}
+              className="flex items-center gap-2 rounded-l-none"
+              onClick={() => setViewMode('simple')}
+            >
+              <FileCode size={16} />
+              Simple Markdown
+            </Button>
+          </div>
+        </div>
+        
+        {viewMode === 'full' ? (
+          <ResumeBuilder />
+        ) : (
+          <MarkdownCV />
+        )}
+      </div>
     </div>
   );
 };
