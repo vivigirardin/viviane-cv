@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  base: '/viviane-cv/',
+  base: './',
   plugins: [
     react(),
     mode === 'development' &&
