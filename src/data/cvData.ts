@@ -1,4 +1,3 @@
-
 export const cvData = {
   profile: {
     name: "Viviane Girardin",
@@ -9,8 +8,9 @@ export const cvData = {
       github: "github.com/vivigirardin"
     }
   },
-  
-  summary: ["As a self-taught developer, I have had the opportunity to contribute to building some NIVA's lab digital solutions. I work on creating R Shiny applications to support data visualisation and help improve data handling processes. I assist with designing data pipelines and ensuring the documentation of data and processing methods align with the FAIR principles. Additionally, my background in customer service has strengthened my ability to communicate with users, understand their needs, and translate them into technical solutions. I collaborate closely with team members to improve data quality and make it more accessible for decision-making."],
+
+  summary: ["As a self-taught developer, I’ve contributed to developing digital solutions for NIVA’s laboratories. I build R Shiny applications to support data visualisation and improve data handling processes. I assist in designing data pipelines and ensuring that data and processing methods are documented in line with the FAIR principles. My background in customer service has enhanced my communication skills, enabling me to better understand user needs and translate them into effective technical solutions. I collaborate closely with team members to improve data quality and make it more accessible for decision-making."],
+
   education: [
     {
       position: "MSc in Toxicology",
@@ -25,7 +25,7 @@ export const cvData = {
       details: ""
     }
   ],
-  
+
   experiences: [
     {
       position: "Systems Engineer",
@@ -34,7 +34,7 @@ export const cvData = {
       details: `<ul class="list-disc pl-5 space-y-1">
         <li>Development of Shiny dashboards for data access, visualization, and quality assurance</li>
         <li>Development and maintenance of the laboratory data system, including its database</li>
-        <li>Data management and governance in national and international projects</li>
+        <li>Data governance and management in national and international projects</li>
       </ul>`
     },
     {
@@ -46,19 +46,19 @@ export const cvData = {
       </ul>`
     },
     {
-      position: "Teaching assistant",
+      position: "Teaching Assistant",
       company: "Carpentry@UiO",
       dates: "2019 - 2023",
       details: `<ul class="list-disc pl-5 space-y-1">
-        <li>Teaching assistant in a variety of workshops in R and Git. Carpentry@UiO offers foundational coding and data science skills workshops to PhD students, researchers and others at UiO</li>
+        <li>Assisted in R and Git workshops for researchers and PhD students at the University of Oslo as part of Carpentry@UiO, which provides foundational training in coding and data science</li>
       </ul>`
     },
     {
-      position: "Summer intern",
+      position: "Summer Intern",
       company: "Statens vegvesen",
       dates: "May 2018 - August 2018",
       details: `<ul class="list-disc pl-5 space-y-1">
-        <li>Field work - sampling of water, sediment and biota</li>
+        <li>Field work – sampling of water, sediment and biota</li>
         <li>Elaboration of a report on the effects of suspended particles in aquatic systems</li>
         <li>Summary for the report "Sustainable Design and Maintenance of Stormwater Treatment Facilities"</li>
         <li>Diverse literature research</li>
@@ -69,7 +69,7 @@ export const cvData = {
       company: "Norwegian Institute for Water Research (NIVA)",
       dates: "January 2016 - August 2016",
       details: `<ul class="list-disc pl-5 space-y-1">
-        <li>Laboratory work: Extraction methods for chemical analysis of organic and inorganic compounds in fish, phytoplankton and sediment and quantification using HPLC</li>
+        <li>Laboratory work: Extraction methods for chemical analysis of organic and inorganic compounds in fish, phytoplankton and sediment, and quantification using HPLC</li>
       </ul>`
     },
     {
@@ -78,25 +78,25 @@ export const cvData = {
       dates: "June 2014 - January 2015",
       details: `<ul class="list-disc pl-5 space-y-1">
         <li>Administrative support</li>
-        <li>Organization, management and representation of BNCC on monthly seminars and network events</li>
+        <li>Organisation, management and representation of BNCC at monthly seminars and networking events</li>
         <li>Redesign and restructure of BNCC's website</li>
-        <li>Organization of meetings and travel</li>
-        <li>Member enquiries</li>
+        <li>Coordination of meetings and travel</li>
+        <li>Handling member enquiries</li>
       </ul>`
     },
     {
-      position: "Swimming instructor",
+      position: "Swimming Instructor",
       company: "Norges Livredningsselskap",
       dates: "May 2018 - 2022",
-      details: "Swimming courses for children between 4 and 12 years-old."
+      details: "Taught swimming to children aged 4–12."
     },
     {
-      position: "English/Portuguese translator and teacher",
+      position: "English/Portuguese Translator and Teacher",
       company: "Self-employed",
       dates: "August 2008 - January 2014",
       details: `<ul class="list-disc pl-5 space-y-1">
-        <li>Technical translation of documents and resumes for the oil and gas industry</li>
-        <li>Portuguese and English teacher</li>
+        <li>Technical translation of documents and CVs for the oil and gas industry</li>
+        <li>Private lessons in Portuguese and English</li>
       </ul>`
     },
     {
@@ -105,69 +105,68 @@ export const cvData = {
       dates: "March 2010 - December 2012",
       details: `<ul class="list-disc pl-5 space-y-1">
         <li>Responsible for recruiting, training, and leading employees</li>
-        <li>Sales</li>
-        <li>Technical support</li>
+        <li>Sales and technical support</li>
       </ul>`
     },
     {
-      position: "Retail/Operational Manager",
+      position: "Retail / Operational Manager",
       company: "Hard Rock Café",
       dates: "July 2008 - February 2010",
       details: `<ul class="list-disc pl-5 space-y-1">
-        <li>Responsible for recruiting, training, and leading sales assistants</li>
-        <li>Management of all departments as manager in duty</li>
-        <li>Customer service</li>
+        <li>Managed staff recruitment, training, and day-to-day operations</li>
+        <li>Oversaw all departments as manager on duty</li>
+        <li>Customer service and sales</li>
       </ul>`
     }
   ],
-  
+
   courses: [
     {
-      position: "Certificate - Architecting with Google Kubernetes Engine Specialization Certificate",
+      position: "Certificate - Architecting with Google Kubernetes Engine Specialization",
       company: "Google",
-      dates: "1 months at 10 hours a week; July 2024",
+      dates: "1-month course, 10 hours/week; July 2024",
       details: ""
     },
     {
       position: "Certificate - Google Cloud Digital Leader Training",
       company: "Google",
-      dates: "1 months at 10 hours a week; September 2023",
+      dates: "1-month course, 10 hours/week; September 2023",
       details: ""
     },
     {
       position: "Course - Norges Kurs i arbeidsvarsling i henhold til Statens vegvesen Håndbok N301",
       company: "Statens vegvesen",
       dates: "1-day course, 2018",
-      details: "Course aimed on safety during roadwork. It gives the necessary knowledge and understanding of their own and others' safety when working on or by road, and the formal safety procedures that must be followed before and during the work."
+      details: "Course focused on safety during roadwork. Covered key safety procedures required before and during road operations."
     },
     {
-      position: "Course - International General Certification in Occupational Health and Safety",
+      position: "Course - International General Certificate in Occupational Health and Safety",
       company: "National Examination Board in Occupational HSE (NEBOSH)",
       dates: "Approx. 135h, 2012",
-      details: "The course includes the practical assessment of a workplace. <strong>Passed with distinction</strong>."
+      details: "Included practical assessment of workplace health and safety. <strong>Passed with distinction</strong>."
     }
   ],
-  
+
   others: [
     {
-      position: "Board member",
+      position: "Board Member",
       company: "Carpentry@UiO",
       dates: "",
       details: "<a href='https://www.ub.uio.no/english/libraries/dsc/carpentry-uio/' target='_blank' rel='noopener noreferrer' class='text-blue-600 hover:underline'>Carpentry@UiO</a> is part of The Carpentries, a global and inclusive community that teaches foundational coding and data science skills to researchers"
     },
-        {
-      position: "Working Environment Committee member (Arbeidsmiljøutvalg)",
+    {
+      position: "Working Environment Committee Member (Arbeidsmiljøutvalg)",
       company: "NIVA",
       dates: "",
-      details: ""
+      details: "Contributes to discussions and initiatives related to workplace safety, wellbeing, and the physical and psychosocial work environment."
     }
   ],
-  
+
   skills: [
     { name: "R", level: 7 },
     { name: "Shiny", level: 7 },
     { name: "Git", level: 7 },
-    { name: "SQL", level: 7, description: "Mostly Oracle and SQLite, some PostgreSQL experience" },
+    { name: "SQL", level: 7, description: "Mostly Oracle and SQLite, with some PostgreSQL experience" },
     { name: "Docker", level: 6 },
     { name: "Kubernetes", level: 5 },
     { name: "Google Cloud Platform", level: 4 },
@@ -176,8 +175,8 @@ export const cvData = {
     { name: "Python", level: 3 },
     { name: "Crystal Reports", level: 5 }
   ],
-  
-  languages: "<strong>Portuguese</strong> - Native<br><strong>Norwegian</strong> - Professional<br><strong>English</strong> - Professional",
-  
+
+  languages: "<strong>Portuguese</strong> – Native<br><strong>Norwegian</strong> – Professional<br><strong>English</strong> – Professional",
+
   interests: "<strong>R</strong>, <strong>SCUBA diving</strong>, <strong>board games</strong>, <strong>travel</strong>"
 };
