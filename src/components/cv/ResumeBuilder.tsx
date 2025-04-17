@@ -60,7 +60,7 @@ export function ResumeBuilder() {
           ))}
         </Section>
 
-        <Section title="Work Experience & Certifications" icon={<Briefcase size={20} />}>
+        <Section title="Work Experience" icon={<Briefcase size={20} />}>
           {/* Work Experience */}
           {cvData.experiences.map((item, index) => (
             <ExperienceItem 
