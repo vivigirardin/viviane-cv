@@ -85,9 +85,9 @@ export const cvData = {
       </ul>`
     },
     {
-      position: "Other - Swimming instructor",
+      position: "Swimming instructor",
       company: "Norges Livredningsselskap",
-      dates: "May 2018 - Present",
+      dates: "May 2018 - 2022",
       details: "Swimming courses for children between 4 and 12 years-old."
     },
     {
@@ -147,6 +147,15 @@ export const cvData = {
       details: "The course includes the practical assessment of a workplace. <strong>Passed with distinction</strong>."
     },
     {
+      position: "Other - Board member",
+      company: "Carpentry@UiO, Sameiet Kirkeveien 129b",
+      dates: "",
+      details: ""
+    }
+  ],
+
+   courses: [
+     {
       position: "Other - Board member",
       company: "Carpentry@UiO, Sameiet Kirkeveien 129b",
       dates: "",
