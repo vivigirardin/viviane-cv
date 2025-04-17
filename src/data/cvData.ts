@@ -154,6 +154,12 @@ export const cvData = {
       company: "Carpentry@UiO",
       dates: "",
       details: "<a href='https://www.ub.uio.no/english/libraries/dsc/carpentry-uio/' target='_blank' rel='noopener noreferrer' class='text-blue-600 hover:underline'>Carpentry@UiO</a> is part of The Carpentries, a global and inclusive community that teaches foundational coding and data science skills to researchers"
+    },
+        {
+      position: "Working Environment Committee member (Arbeidsmiljøutvalg)",
+      company: "NIVA",
+      dates: "",
+      details: ""
     }
   ],
   
