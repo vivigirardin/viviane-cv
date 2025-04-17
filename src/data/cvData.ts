@@ -1,4 +1,3 @@
-
 export const cvData = {
   profile: {
     name: "Viviane Girardin",
@@ -153,7 +152,7 @@ export const cvData = {
       position: "Board member",
       company: "Carpentry@UiO",
       dates: "",
-      details: ""
+      details: "<a href='https://www.ub.uio.no/english/libraries/dsc/carpentry-uio/' target='_blank' rel='noopener noreferrer'>Carpentry@UiO</a>"
     }
   ],
   
