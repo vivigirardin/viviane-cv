@@ -164,6 +164,7 @@ export function MarkdownCV() {
           body {
             -webkit-print-color-adjust: exact;
             print-color-adjust: exact;
+            color-adjust: exact;
           }
           .print-section { display: block !important; }
           .print-hidden { display: none !important; }
@@ -171,9 +172,56 @@ export function MarkdownCV() {
           .print-show-header-only .cv-sidebar { 
             display: none !important; 
           }
+          
+          /* Enhanced print styles to match web appearance */
           .print-preserve-grid {
             display: grid !important;
             grid-template-columns: 2fr 1fr !important;
+            gap: 1.5rem !important;
+          }
+          
+          /* Preserve colors and styling */
+          .text-primary {
+            color: hsl(var(--primary)) !important;
+          }
+          
+          /* Preserve spacing and layout */
+          .p-6 { padding: 1.5rem !important; }
+          .mb-4 { margin-bottom: 1rem !important; }
+          .mb-6 { margin-bottom: 1.5rem !important; }
+          .gap-6 { gap: 1.5rem !important; }
+          
+          /* Preserve card appearance */
+          .card {
+            background-color: white !important;
+            border: 1px solid hsl(var(--border)) !important;
+            border-radius: 0.5rem !important;
+          }
+          
+          /* Preserve icon colors */
+          svg.text-primary {
+            color: hsl(var(--primary)) !important;
+          }
+          
+          /* Preserve progress bars */
+          .progress-bar {
+            background-color: hsl(var(--primary)) !important;
+          }
+          
+          /* Ensure text is readable */
+          h1, h2, h3, p, li, a {
+            color: black !important;
+          }
+          
+          a.text-primary {
+            color: hsl(var(--primary)) !important;
+          }
+          
+          /* Force background colors to print */
+          .bg-gray-50, .bg-primary\/10 {
+            background-color: #f9fafb !important;
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
           }
         }
         `
@@ -196,7 +244,7 @@ export function MarkdownCV() {
         </div>
         
         <div className="print:col-span-1 space-y-4 mt-6 md:mt-0 cv-sidebar">
-          <Card className="p-4">
+          <Card className="p-4 print:border print:rounded-lg">
             <div className="flex items-center gap-2 mb-3">
               <Briefcase size={18} className="text-primary" />
               <h3 className="text-lg font-medium">Technical Skills</h3>
@@ -208,7 +256,7 @@ export function MarkdownCV() {
             />
           </Card>
           
-          <Card className="p-4">
+          <Card className="p-4 print:border print:rounded-lg">
             <div className="flex items-center gap-2 mb-3">
               <Globe size={18} className="text-primary" />
               <h3 className="text-lg font-medium">Languages</h3>
@@ -219,7 +267,7 @@ export function MarkdownCV() {
             />
           </Card>
           
-          <Card className="p-4">
+          <Card className="p-4 print:border print:rounded-lg">
             <div className="flex items-center gap-2 mb-3">
               <Code size={18} className="text-primary" />
               <h3 className="text-lg font-medium">Interests</h3>

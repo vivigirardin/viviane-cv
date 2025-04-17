@@ -18,45 +18,87 @@ const Index = () => {
               size: auto;
             }
             body {
-              -webkit-print-color-adjust: exact;
-              print-color-adjust: exact;
+              -webkit-print-color-adjust: exact !important;
+              print-color-adjust: exact !important;
+              color-adjust: exact !important;
             }
-            /* Preserve all styles when printing */
+            
+            /* Hide elements when printing */
             .print\\:hidden {
               display: none !important;
             }
+            
+            /* Remove shadows in print */
             .print\\:shadow-none {
               box-shadow: none !important;
             }
-            /* Ensure grid layout is preserved in print */
+            
+            /* Preserve layout in print */
             .grid {
               display: grid !important;
             }
+            
             .md\\:grid-cols-3 {
               grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
             }
+            
             .md\\:col-span-2 {
               grid-column: span 2 / span 2 !important;
             }
+            
             .md\\:col-span-1 {
               grid-column: span 1 / span 1 !important;
             }
-            /* Ensure proper text alignment in print */
+            
+            /* Text alignment in print */
             .text-center {
               text-align: center !important;
             }
+            
             .md\\:text-left {
               text-align: left !important;
             }
-            /* Fix spacing between header and content */
+            
+            /* Spacing in print */
             .mb-8 {
               margin-bottom: 1rem !important;
             }
+            
             .mt-8 {
               margin-top: 1rem !important;
             }
+            
             .pb-6 {
               padding-bottom: 1rem !important;
+            }
+            
+            .gap-6 {
+              gap: 1.5rem !important;
+            }
+            
+            /* Make sure cards print with borders */
+            .card {
+              border: 1px solid #e5e7eb !important;
+              border-radius: 0.5rem !important;
+            }
+            
+            /* Make sure colors print */
+            .text-primary {
+              color: hsl(var(--primary)) !important;
+            }
+            
+            svg.text-primary {
+              color: hsl(var(--primary)) !important;
+            }
+            
+            /* Make sure backgrounds print */
+            .bg-gray-50 {
+              background-color: #f9fafb !important;
+            }
+            
+            /* Ensure progress bars print correctly */
+            .progress-value {
+              background-color: hsl(var(--primary)) !important;
             }
           }
         `
