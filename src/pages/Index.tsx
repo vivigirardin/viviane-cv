@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { ResumeBuilder } from "@/components/cv/ResumeBuilder";
 import { MarkdownCV } from "@/components/cv/MarkdownCV";
@@ -14,14 +13,17 @@ const Index = () => {
         __html: `
           @media print {
             @page {
-              margin: 0.5cm;
+              margin: 1cm;
               size: A4;
+              padding: 0;
             }
             body {
               -webkit-print-color-adjust: exact !important;
               print-color-adjust: exact !important;
               color-adjust: exact !important;
               background: white !important;
+              margin: 0;
+              padding: 0;
             }
             
             /* Hide elements when printing */
@@ -43,68 +45,51 @@ const Index = () => {
               grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
             }
             
-            .md\\:col-span-2 {
-              grid-column: span 2 / span 2 !important;
-            }
-            
-            .md\\:col-span-1 {
-              grid-column: span 1 / span 1 !important;
-            }
-            
-            /* Text alignment in print */
-            .text-center {
-              text-align: center !important;
-            }
-            
-            .md\\:text-left {
-              text-align: left !important;
-            }
-            
-            /* Spacing in print */
-            .mb-8 {
-              margin-bottom: 1rem !important;
-            }
-            
-            .mt-8 {
-              margin-top: 1rem !important;
-            }
-            
-            .pb-6 {
-              padding-bottom: 1rem !important;
-            }
-            
-            .gap-6 {
-              gap: 1.5rem !important;
-            }
-            
-            /* Make sure cards print with borders */
-            .card {
-              border: 1px solid #e5e7eb !important;
-              border-radius: 0.5rem !important;
-              background-color: white !important;
-            }
-            
-            /* Make sure colors print */
-            .text-primary {
-              color: hsl(var(--primary)) !important;
-            }
-            
-            svg.text-primary {
-              color: hsl(var(--primary)) !important;
-            }
-            
-            /* Make sure backgrounds print */
-            .bg-gray-50 {
-              background-color: white !important;
-            }
-            
-            .gradient-bg {
+            /* Force white background */
+            .bg-gradient-to-br, .bg-gray-50, .bg-primary\\/10 {
               background: white !important;
             }
             
-            /* Ensure progress bars print correctly */
-            .progress-value {
-              background-color: hsl(var(--primary)) !important;
+            /* Ensure borders print */
+            .border-b {
+              border-bottom-width: 1px !important;
+              border-bottom-style: solid !important;
+              border-bottom-color: #e5e7eb !important;
+            }
+            
+            /* Remove gaps */
+            .gap-6 {
+              gap: 1rem !important;
+            }
+            
+            /* Adjust margins */
+            .mt-4 {
+              margin-top: 0.5rem !important;
+            }
+            
+            .mb-4 {
+              margin-bottom: 0.5rem !important;
+            }
+            
+            /* Make text darker for better print */
+            .text-gray-600 {
+              color: #374151 !important;
+            }
+            
+            .text-gray-700 {
+              color: #1f2937 !important;
+            }
+            
+            /* Ensure cards print properly */
+            .card {
+              background-color: white !important;
+              border: 1px solid #e5e7eb !important;
+              break-inside: avoid !important;
+            }
+            
+            /* Preserve icons */
+            svg.text-primary {
+              color: currentColor !important;
             }
           }
         `
