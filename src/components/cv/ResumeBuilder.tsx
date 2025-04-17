@@ -1,5 +1,5 @@
 
-import { Briefcase, GraduationCap, Archive, User, Code } from "lucide-react";
+import { Briefcase, GraduationCap, Archive, User, Code, Printer } from "lucide-react";
 import { Header } from "./Header";
 import { Section } from "./Section";
 import { ExperienceItem } from "./ExperienceItem";
