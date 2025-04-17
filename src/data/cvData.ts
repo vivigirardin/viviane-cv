@@ -146,8 +146,9 @@ export const cvData = {
       dates: "Approx. 135h, 2012",
       details: "The course includes the practical assessment of a workplace. <strong>Passed with distinction</strong>."
     }
-      ],
-  others[
+  ],
+  
+  others: [
     {
       position: "Board member",
       company: "Carpentry@UiO",
