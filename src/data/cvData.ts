@@ -1,3 +1,4 @@
+
 export const cvData = {
   profile: {
     name: "Viviane Girardin",
@@ -144,6 +145,12 @@ export const cvData = {
       company: "National Examination Board in Occupational HSE (NEBOSH)",
       dates: "Approx. 135h, 2012",
       details: "The course includes the practical assessment of a workplace. <strong>Passed with distinction</strong>."
+    },
+    {
+      position: "Others",
+      company: "",
+      dates: "",
+      details: ""
     },
     {
       position: "Other - Board member",

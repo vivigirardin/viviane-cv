@@ -1,3 +1,4 @@
+
 import { Briefcase, GraduationCap, Archive, Star, Globe, Heart, Printer, User } from "lucide-react";
 import { Header } from "./Header";
 import { Section } from "./Section";
@@ -70,7 +71,7 @@ export function ResumeBuilder() {
             ))}
           </Section>
           
-          <Section title="Other Experiences" icon={<Archive size={20} />}>
+          <Section title="Courses & Certificates" icon={<Archive size={20} />}>
             {cvData.courses.map((item, index) => (
               <ExperienceItem 
                 key={index}
