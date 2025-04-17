@@ -1,9 +1,8 @@
-
 import { ResumeBuilder } from "@/components/cv/ResumeBuilder";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-200 py-10 px-4 print:p-0 print:bg-white">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-200 py-10 px-4 print:p-0 print:bg-white text-left">
       <style dangerouslySetInnerHTML={{
         __html: `
           @media print {
