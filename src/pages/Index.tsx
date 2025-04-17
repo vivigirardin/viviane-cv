@@ -3,7 +3,7 @@ import { useState } from "react";
 import { ResumeBuilder } from "@/components/cv/ResumeBuilder";
 import { MarkdownCV } from "@/components/cv/MarkdownCV";
 import { Button } from "@/components/ui/button";
-import { FileText, FileCode } from "lucide-react";
+import { FileText, FileCode, Printer } from "lucide-react";
 
 const Index = () => {
   const [viewMode, setViewMode] = useState<'full' | 'simple'>('full');
@@ -75,12 +75,21 @@ const Index = () => {
             </Button>
             <Button
               variant={viewMode === 'simple' ? 'default' : 'outline'}
-              className="flex items-center gap-2 rounded-l-none"
+              className="flex items-center gap-2 rounded-l-none rounded-r-none"
               onClick={() => setViewMode('simple')}
             >
               <FileCode size={16} />
               Simple Markdown
             </Button>
+            <a href="/header-only.html" target="_blank" rel="noopener noreferrer">
+              <Button
+                variant="outline"
+                className="flex items-center gap-2 rounded-l-none"
+              >
+                <Printer size={16} />
+                Header Only
+              </Button>
+            </a>
           </div>
         </div>
         

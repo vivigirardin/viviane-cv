@@ -8,6 +8,7 @@ import { SkillsLanguages } from "@/components/cv/SkillsLanguages";
 
 export function MarkdownCV() {
   const [markdown, setMarkdown] = useState<string>('');
+  const [printHeaderOnly, setPrintHeaderOnly] = useState<boolean>(false);
 
   useEffect(() => {
     fetch('/src/data/simplifiedCV.md')
@@ -23,6 +24,14 @@ export function MarkdownCV() {
 
   const handlePrint = () => {
     window.print();
+  };
+  
+  const handlePrintHeaderOnly = () => {
+    setPrintHeaderOnly(true);
+    setTimeout(() => {
+      window.print();
+      setPrintHeaderOnly(false);
+    }, 100);
   };
   
   const handleDownload = () => {
@@ -102,6 +111,20 @@ export function MarkdownCV() {
     return renderedText;
   };
 
+  // Extract header content (name and contacts) from markdown
+  const extractHeader = (text: string) => {
+    const headerMatch = text.match(/^# (.*$)[\s\S]*?(\*\*Email:\*\*.*\*\*GitHub:\*\*.*)/m);
+    if (headerMatch && headerMatch.length >= 3) {
+      return {
+        name: headerMatch[1],
+        contacts: headerMatch[2]
+      };
+    }
+    return { name: '', contacts: '' };
+  };
+
+  const header = extractHeader(markdown);
+
   return (
     <div className="max-w-6xl mx-auto bg-white shadow-lg rounded-lg print:shadow-none">
       <div className="flex justify-end gap-2 mb-4 p-4 print:hidden">
@@ -111,7 +134,15 @@ export function MarkdownCV() {
           className="flex items-center gap-2"
         >
           <Printer size={16} />
-          Print
+          Print Full CV
+        </Button>
+        <Button 
+          onClick={handlePrintHeaderOnly} 
+          variant="outline" 
+          className="flex items-center gap-2"
+        >
+          <Printer size={16} />
+          Print Header Only
         </Button>
         <Button 
           onClick={handleDownload} 
@@ -123,15 +154,46 @@ export function MarkdownCV() {
         </Button>
       </div>
       
-      <div className="md:grid md:grid-cols-3 gap-6 p-6 print:p-0">
+      <style jsx global>{`
+        @media print {
+          @page { 
+            margin: 0.5cm;
+            size: auto;
+          }
+          body {
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+          }
+          .print-section { display: block !important; }
+          .print-hidden { display: none !important; }
+          .print-show-header-only .cv-body,
+          .print-show-header-only .cv-sidebar { 
+            display: none !important; 
+          }
+          .print-preserve-grid {
+            display: grid !important;
+            grid-template-columns: 2fr 1fr !important;
+          }
+        }
+      `}</style>
+      
+      <div className={`md:grid md:grid-cols-3 gap-6 p-6 print:p-4 print:preserve-grid ${printHeaderOnly ? 'print-show-header-only' : ''}`}>
         <div className="md:col-span-2 print:col-span-2">
-          <div 
-            className="markdown-content" 
-            dangerouslySetInnerHTML={{ __html: renderMarkdown(markdown) }}
+          <div className="print-section">
+            <h1 className="text-3xl font-bold mt-1 mb-4">{header.name}</h1>
+            <div dangerouslySetInnerHTML={{ 
+              __html: renderMarkdown(header.contacts) 
+            }} className="mb-6" />
+          </div>
+          
+          <div className="markdown-content cv-body" 
+            dangerouslySetInnerHTML={{ 
+              __html: renderMarkdown(markdown.replace(/^# .*$/m, '').replace(/^\*\*Email:\*\*.*\*\*GitHub:\*\*.*$/m, '')) 
+            }}
           />
         </div>
         
-        <div className="print:col-span-1 space-y-4 mt-6 md:mt-0">
+        <div className="print:col-span-1 space-y-4 mt-6 md:mt-0 cv-sidebar">
           <Card className="p-4">
             <div className="flex items-center gap-2 mb-3">
               <Briefcase size={18} className="text-primary" />
