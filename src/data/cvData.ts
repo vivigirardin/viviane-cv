@@ -48,7 +48,7 @@ export const cvData = {
     {
       position: "Teaching assistant",
       company: "Carpentry@UiO",
-      dates: "2019 - Present",
+      dates: "2019 - 2023",
       details: `<ul class="list-disc pl-5 space-y-1">
         <li>Teaching assistant in a variety of workshops in R and Git. Carpentry@UiO offers foundational coding and data science skills workshops to PhD students, researchers and others at UiO</li>
       </ul>`
@@ -83,6 +83,12 @@ export const cvData = {
         <li>Organization of meetings and travel</li>
         <li>Member enquiries</li>
       </ul>`
+    },
+    {
+      position: "Other - Swimming instructor",
+      company: "Norges Livredningsselskap",
+      dates: "May 2018 - Present",
+      details: "Swimming courses for children between 4 and 12 years-old."
     },
     {
       position: "English/Portuguese translator and teacher",
@@ -139,18 +145,6 @@ export const cvData = {
       company: "National Examination Board in Occupational HSE (NEBOSH)",
       dates: "Approx. 135h, 2012",
       details: "The course includes the practical assessment of a workplace. <strong>Passed with distinction</strong>."
-    },
-    {
-      position: "Course - Experimental animal studies",
-      company: "University of Oslo",
-      dates: "April 2018",
-      details: "The course includes 25 hours of practical work at an animal facility."
-    },
-    {
-      position: "Other - Swimming instructor",
-      company: "Norges Livredningsselskap",
-      dates: "May 2018 - Present",
-      details: "Swimming courses for children between 4 and 12 years-old."
     },
     {
       position: "Other - Board member",
