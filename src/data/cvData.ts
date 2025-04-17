@@ -39,7 +39,7 @@ export const cvData = {
     webTechnologies: [
       {
         name: "HTML/CSS/Markdown",
-        details: "Experience with frontend development"
+        details: ""
       }
     ],
     databases: [
@@ -51,7 +51,7 @@ export const cvData = {
     tools: [
       {
         name: "Git",
-        details: "Version control and collaborative development"
+        details: ""
       },
       {
         name: "Crystal Reports",
